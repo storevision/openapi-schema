@@ -113,10 +113,15 @@
                     "email": {
                         "type": "string"
                     },
-                    "displayName": {
+                    "display_name": {
                         "type": "string"
                     }
-                }
+                },
+                "required": [
+                    "id",
+                    "email",
+                    "display_name"
+                ]
             },
             "AuthCookie": {
                 "type": "string",
