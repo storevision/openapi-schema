@@ -12,6 +12,13 @@
         }
     ],
     "components": {
+        "securitySchemes": {
+            "cookieAuth": {
+                "type": "apiKey",
+                "in": "cookie",
+                "name": "token"
+            }
+        },
         "schemas": {
             "SuccessResponse": {
                 "type": "object",
@@ -110,6 +117,10 @@
                         "type": "string"
                     }
                 }
+            },
+            "AuthCookie": {
+                "type": "string",
+                "example": "token=ey...; Path=/; HttpOnly; SameSite=Strict"
             }
         }
     },
@@ -196,6 +207,11 @@
                     "users"
                 ],
                 "description": "Get user info",
+                "security": [
+                    {
+                        "cookieAuth": []
+                    }
+                ],
                 "responses": {
                     "200": {
                         "content": {
@@ -291,6 +307,13 @@
                                             ]
                                         }
                                     ]
+                                }
+                            }
+                        },
+                        "headers": {
+                            "Set-Cookie": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/AuthCookie"
                                 }
                             }
                         },
