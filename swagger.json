@@ -106,7 +106,7 @@
                     "email": {
                         "type": "string"
                     },
-                    "display_name": {
+                    "displayName": {
                         "type": "string"
                     }
                 }
@@ -256,11 +256,15 @@
                                     },
                                     "password": {
                                         "type": "string"
+                                    },
+                                    "keepLoggedIn": {
+                                        "type": "boolean"
                                     }
                                 },
                                 "required": [
                                     "email",
-                                    "password"
+                                    "password",
+                                    "keepLoggedIn"
                                 ]
                             }
                         }
@@ -341,14 +345,14 @@
                                     "password": {
                                         "type": "string"
                                     },
-                                    "display_name": {
+                                    "displayName": {
                                         "type": "string"
                                     }
                                 },
                                 "required": [
                                     "email",
                                     "password",
-                                    "display_name"
+                                    "displayName"
                                 ]
                             }
                         }
