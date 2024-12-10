@@ -77,14 +77,14 @@
                         "type": "string",
                         "format": "uri"
                     },
-                    "blurhash": {
+                    "blured_image": {
                         "type": "string"
                     },
-                    "blurhash_width": {
+                    "blured_image_width": {
                         "type": "integer",
                         "format": "int64"
                     },
-                    "blurhash_height": {
+                    "blured_image_height": {
                         "type": "integer",
                         "format": "int64"
                     }
