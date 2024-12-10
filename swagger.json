@@ -76,6 +76,17 @@
                     "image_url": {
                         "type": "string",
                         "format": "uri"
+                    },
+                    "blurhash": {
+                        "type": "string"
+                    },
+                    "blurhash_width": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "blurhash_height": {
+                        "type": "integer",
+                        "format": "int64"
                     }
                 },
                 "required": [
