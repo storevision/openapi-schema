@@ -77,14 +77,14 @@
                         "type": "string",
                         "format": "uri"
                     },
-                    "blured_image": {
+                    "blurred_image": {
                         "type": "string"
                     },
-                    "blured_image_width": {
+                    "blurred_image_width": {
                         "type": "integer",
                         "format": "int64"
                     },
-                    "blured_image_height": {
+                    "blurred_image_height": {
                         "type": "integer",
                         "format": "int64"
                     }
