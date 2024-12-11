@@ -179,6 +179,70 @@
                 }
             }
         },
+        "/products/search": {
+            "get": {
+                "tags": [
+                    "products"
+                ],
+                "description": "Search products",
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "#/components/schemas/SuccessResponse"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "data": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "allOf": [
+                                                            {
+                                                                "$ref": "#/components/schemas/Product"
+                                                            },
+                                                            {
+                                                                "type": "object",
+                                                                "properties": {
+                                                                    "score": {
+                                                                        "type": "number",
+                                                                        "format": "double"
+                                                                    }
+                                                                },
+                                                                "required": [
+                                                                    "score"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "required": [
+                                                "data"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "description": "A list of products"
+                    }
+                }
+            }
+        },
         "/categories/list": {
             "get": {
                 "tags": [
