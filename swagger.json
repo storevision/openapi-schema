@@ -472,7 +472,7 @@
                                 }
                             }
                         },
-                        "description": "Unauthorized"
+                        "description": "Unauthorized (token missing, token expired,...)"
                     }
                 }
             }
@@ -554,7 +554,7 @@
                                 }
                             }
                         },
-                        "description": "Bad request"
+                        "description": "Bad request (email empty, password empty,...)"
                     },
                     "401": {
                         "content": {
@@ -568,7 +568,7 @@
                                 }
                             }
                         },
-                        "description": "Unauthorized"
+                        "description": "Unauthorized (email not found, password incorrect,...)"
                     }
                 }
             }
@@ -643,7 +643,7 @@
                                 }
                             }
                         },
-                        "description": "Bad request"
+                        "description": "Bad request (email empty, password empty,...)"
                     },
                     "409": {
                         "content": {
@@ -657,7 +657,7 @@
                                 }
                             }
                         },
-                        "description": "Conflict"
+                        "description": "Conflict (email already exists)"
                     },
                     "500": {
                         "content": {
@@ -671,7 +671,7 @@
                                 }
                             }
                         },
-                        "description": "Internal server error"
+                        "description": "Internal server error (database error,...)"
                     }
                 }
             }
