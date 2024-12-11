@@ -98,6 +98,22 @@
                     "image_url"
                 ]
             },
+            "SearchedProduct": {
+                "type": "object",
+                "properties": {
+                    "product": {
+                        "$ref": "#/components/schemas/Product"
+                    },
+                    "score": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                },
+                "required": [
+                    "product",
+                    "score"
+                ]
+            },
             "Category": {
                 "type": "object",
                 "properties": {
@@ -210,23 +226,7 @@
                                                 "data": {
                                                     "type": "array",
                                                     "items": {
-                                                        "allOf": [
-                                                            {
-                                                                "$ref": "#/components/schemas/Product"
-                                                            },
-                                                            {
-                                                                "type": "object",
-                                                                "properties": {
-                                                                    "score": {
-                                                                        "type": "number",
-                                                                        "format": "double"
-                                                                    }
-                                                                },
-                                                                "required": [
-                                                                    "score"
-                                                                ]
-                                                            }
-                                                        ]
+                                                        "$ref": "#/components/schemas/SearchedProduct"
                                                     }
                                                 }
                                             },
@@ -244,11 +244,7 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
-                                        {
-                                            "$ref": "#/components/schemas/ErrorResponse"
-                                        }
-                                    ]
+                                    "$ref": "#/components/schemas/ErrorResponse"
                                 }
                             }
                         },
