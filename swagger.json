@@ -239,6 +239,20 @@
                             }
                         },
                         "description": "A list of products"
+                    },
+                    "400": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "#/components/schemas/ErrorResponse"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "description": "Bad request (query empty,...)"
                     }
                 }
             }
