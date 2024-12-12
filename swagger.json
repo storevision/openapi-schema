@@ -78,15 +78,18 @@
                         "format": "uri"
                     },
                     "blurred_image": {
-                        "type": "string"
+                        "type": "string",
+                        "nullable": true
                     },
                     "blurred_image_width": {
                         "type": "integer",
-                        "format": "int64"
+                        "format": "int64",
+                        "nullable": true
                     },
                     "blurred_image_height": {
                         "type": "integer",
-                        "format": "int64"
+                        "format": "int64",
+                        "nullable": true
                     }
                 },
                 "required": [
@@ -95,7 +98,10 @@
                     "price_per_unit",
                     "description",
                     "category_id",
-                    "image_url"
+                    "image_url",
+                    "blurred_image",
+                    "blurred_image_width",
+                    "blurred_image_height"
                 ]
             },
             "SearchedProduct": {
