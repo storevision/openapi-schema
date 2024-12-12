@@ -77,6 +77,14 @@
                         "type": "string",
                         "format": "uri"
                     },
+                    "image_width": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "image_height": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
                     "blurred_image": {
                         "type": "string",
                         "nullable": true
@@ -99,6 +107,8 @@
                     "description",
                     "category_id",
                     "image_url",
+                    "image_width",
+                    "image_height",
                     "blurred_image",
                     "blurred_image_width",
                     "blurred_image_height"
