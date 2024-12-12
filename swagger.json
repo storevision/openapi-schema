@@ -98,6 +98,15 @@
                         "type": "integer",
                         "format": "int64",
                         "nullable": true
+                    },
+                    "stock": {
+                        "type": "integer",
+                        "format": "int64",
+                        "minimum": 0
+                    },
+                    "avg_rating": {
+                        "type": "number",
+                        "format": "double"
                     }
                 },
                 "required": [
@@ -111,7 +120,9 @@
                     "image_height",
                     "blurred_image",
                     "blurred_image_width",
-                    "blurred_image_height"
+                    "blurred_image_height",
+                    "stock",
+                    "avg_rating"
                 ]
             },
             "SearchedProduct": {
@@ -128,32 +139,6 @@
                 "required": [
                     "product",
                     "score"
-                ]
-            },
-            "ExtendedProduct": {
-                "type": "object",
-                "allOf": [
-                    {
-                        "$ref": "#/components/schemas/Product"
-                    },
-                    {
-                        "type": "object",
-                        "properties": {
-                            "stock": {
-                                "type": "integer",
-                                "format": "int64",
-                                "minimum": 0
-                            },
-                            "avg_rating": {
-                                "type": "number",
-                                "format": "double"
-                            }
-                        },
-                        "required": [
-                            "stock",
-                            "avg_rating"
-                        ]
-                    }
                 ]
             },
             "Category": {
@@ -325,7 +310,7 @@
                                             "type": "object",
                                             "properties": {
                                                 "data": {
-                                                    "$ref": "#/components/schemas/ExtendedProduct"
+                                                    "$ref": "#/components/schemas/Product"
                                                 }
                                             },
                                             "required": [
