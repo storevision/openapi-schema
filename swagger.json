@@ -132,20 +132,29 @@
             },
             "ExtendedProduct": {
                 "type": "object",
-                "properties": {
-                    "product": {
+                "allOf": [
+                    {
                         "$ref": "#/components/schemas/Product"
                     },
-                    "stock": {
-                        "type": "integer",
-                        "format": "int64",
-                        "minimum": 0
-                    },
-                    "avg_rating": {
-                        "type": "number",
-                        "format": "double"
+                    {
+                        "type": "object",
+                        "properties": {
+                            "stock": {
+                                "type": "integer",
+                                "format": "int64",
+                                "minimum": 0
+                            },
+                            "avg_rating": {
+                                "type": "number",
+                                "format": "double"
+                            }
+                        },
+                        "required": [
+                            "stock",
+                            "avg_rating"
+                        ]
                     }
-                }
+                ]
             },
             "Category": {
                 "type": "object",
