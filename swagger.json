@@ -114,6 +114,23 @@
                     "score"
                 ]
             },
+            "ExtendedProduct": {
+                "type": "object",
+                "properties": {
+                    "product": {
+                        "$ref": "#/components/schemas/Product"
+                    },
+                    "stock": {
+                        "type": "integer",
+                        "format": "int64",
+                        "minimum": 0
+                    },
+                    "avg_rating": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
             "Category": {
                 "type": "object",
                 "properties": {
@@ -283,7 +300,7 @@
                                             "type": "object",
                                             "properties": {
                                                 "data": {
-                                                    "$ref": "#/components/schemas/Product"
+                                                    "$ref": "#/components/schemas/ExtendedProduct"
                                                 }
                                             },
                                             "required": [
