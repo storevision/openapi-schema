@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="454d516c-78d3-4d4d-802e-7f6f179e5118" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/swagger.json" afterDir="false" />
-    </list>
+    <list default="true" id="454d516c-78d3-4d4d-802e-7f6f179e5118" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,11 +63,33 @@
       <workItem from="1733730097451" duration="5378000" />
       <workItem from="1733820864388" duration="4651000" />
       <workItem from="1733907154184" duration="11647000" />
-      <workItem from="1734353860871" duration="1104000" />
+      <workItem from="1734353860871" duration="1559000" />
     </task>
+    <task id="LOCAL-00001" summary="Downgrade openapi to fix IDE errors">
+      <option name="closed" value="true" />
+      <created>1734355077607</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734355077607</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add new api endpoints for reviews">
+      <option name="closed" value="true" />
+      <created>1734355126073</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734355126073</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Downgrade openapi to fix IDE errors" />
+    <MESSAGE value="Add new api endpoints for reviews" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new api endpoints for reviews" />
   </component>
 </project>
