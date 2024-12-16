@@ -217,6 +217,9 @@
                         "type": "integer",
                         "format": "int64"
                     },
+                    "user_display_name": {
+                        "type": "string"
+                    },
                     "rating": {
                         "type": "integer",
                         "format": "int64",
@@ -236,6 +239,7 @@
                     "id",
                     "product_id",
                     "user_id",
+                    "user_display_name",
                     "rating",
                     "comment",
                     "created_at"
