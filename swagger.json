@@ -220,6 +220,10 @@
                     "user_display_name": {
                         "type": "string"
                     },
+                    "is_from_logged_in_user": {
+                        "type": "boolean",
+                        "description": "Whether this review is from the currently logged in user"
+                    },
                     "rating": {
                         "type": "integer",
                         "format": "int64",
@@ -240,6 +244,7 @@
                     "product_id",
                     "user_id",
                     "user_display_name",
+                    "is_from_logged_in_user",
                     "rating",
                     "comment",
                     "created_at"
