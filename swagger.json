@@ -107,47 +107,33 @@
                         "format": "int64",
                         "minimum": 0
                     },
-                    "rating": {
-                        "type": "object",
-                        "properties": {
-                            "one_star": {
-                                "type": "integer",
-                                "format": "int64"
-                            },
-                            "two_stars": {
-                                "type": "integer",
-                                "format": "int64"
-                            },
-                            "three_stars": {
-                                "type": "integer",
-                                "format": "int64"
-                            },
-                            "four_stars": {
-                                "type": "integer",
-                                "format": "int64"
-                            },
-                            "five_stars": {
-                                "type": "integer",
-                                "format": "int64"
-                            },
-                            "total_reviews": {
-                                "type": "integer",
-                                "format": "int64"
-                            },
-                            "average_rating": {
-                                "type": "number",
-                                "format": "double"
-                            }
-                        },
-                        "required": [
-                            "one_star",
-                            "two_stars",
-                            "three_stars",
-                            "four_stars",
-                            "five_stars",
-                            "total_reviews",
-                            "average_rating"
-                        ]
+                    "one_star": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "two_stars": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "three_stars": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "four_stars": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "five_stars": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "total_reviews": {
+                        "type": "integer",
+                        "format": "int64"
+                    },
+                    "average_rating": {
+                        "type": "number",
+                        "format": "double"
                     }
                 },
                 "required": [
@@ -163,7 +149,13 @@
                     "blurred_image_width",
                     "blurred_image_height",
                     "stock",
-                    "rating"
+                    "one_star",
+                    "two_stars",
+                    "three_stars",
+                    "four_stars",
+                    "five_stars",
+                    "total_reviews",
+                    "average_rating"
                 ]
             },
             "SingleProduct": {
