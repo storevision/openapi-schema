@@ -255,6 +255,10 @@
                     "user_display_name": {
                         "type": "string"
                     },
+                    "user_picture_data_url": {
+                        "type": "string",
+                        "nullable": true
+                    },
                     "rating": {
                         "type": "integer",
                         "format": "int64",
@@ -275,6 +279,7 @@
                     "product_id",
                     "user_id",
                     "user_display_name",
+                    "user_picture_data_url",
                     "is_from_logged_in_user",
                     "rating",
                     "comment",
