@@ -313,7 +313,7 @@
             "EditCustomerReview": {
                 "type": "object",
                 "properties": {
-                    "id": {
+                    "product_id": {
                         "type": "integer",
                         "format": "int64"
                     },
@@ -329,7 +329,7 @@
                     }
                 },
                 "required": [
-                    "id",
+                    "product_id",
                     "rating",
                     "comment"
                 ]
@@ -654,13 +654,13 @@
                             "schema": {
                                 "type": "object",
                                 "properties": {
-                                    "id": {
+                                    "product_id": {
                                         "type": "integer",
                                         "format": "int64"
                                     }
                                 },
                                 "required": [
-                                    "id"
+                                    "product_id"
                                 ]
                             }
                         }
