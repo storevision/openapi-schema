@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="454d516c-78d3-4d4d-802e-7f6f179e5118" name="Changes" comment="" />
+    <list default="true" id="454d516c-78d3-4d4d-802e-7f6f179e5118" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +33,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -69,6 +72,8 @@
       <workItem from="1734361852786" duration="69000" />
       <workItem from="1734362849592" duration="113000" />
       <workItem from="1734417555501" duration="300000" />
+      <workItem from="1734422583442" duration="50000" />
+      <workItem from="1734424318983" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="Downgrade openapi to fix IDE errors">
       <option name="closed" value="true" />

@@ -220,12 +220,17 @@
                     },
                     "display_name": {
                         "type": "string"
+                    },
+                    "picture_data_url": {
+                        "type": "string",
+                        "nullable": true
                     }
                 },
                 "required": [
                     "id",
                     "email",
-                    "display_name"
+                    "display_name",
+                    "picture_data_url"
                 ]
             },
             "AuthCookie": {
