@@ -44,7 +44,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.112" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
       </set>
     </attachedChunks>
   </component>
@@ -76,6 +76,7 @@
       <workItem from="1734430374377" duration="1363000" />
       <workItem from="1734434040473" duration="1000" />
       <workItem from="1734437046417" duration="121000" />
+      <workItem from="1736763535718" duration="1149000" />
     </task>
     <task id="LOCAL-00001" summary="Downgrade openapi to fix IDE errors">
       <option name="closed" value="true" />
