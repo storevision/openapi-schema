@@ -297,6 +297,24 @@
                     "quantity"
                 ]
             },
+            "ExtendedCartItem": {
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/CartItem"
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "product": {
+                                "$ref": "#/components/schemas/Product"
+                            }
+                        },
+                        "required": [
+                            "product"
+                        ]
+                    }
+                ]
+            },
             "OrderItem": {
                 "type": "object",
                 "properties": {
@@ -1126,7 +1144,7 @@
                                                 "data": {
                                                     "type": "array",
                                                     "items": {
-                                                        "$ref": "#/components/schemas/CartItem"
+                                                        "$ref": "#/components/schemas/ExtendedCartItem"
                                                     }
                                                 }
                                             },
